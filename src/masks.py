@@ -2,7 +2,7 @@ from typing import List, Dict, Any, Tuple
 
 
 def filter_by_state(list_logs: List[Dict[str, Any]]) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
-    """Функция filter_by_state фильтрует список словарей по ключу 'state'."""
+    """Функция принимает список словарей и возвращает список с ключом выбранного значения"""
     new_list_1 = []
     new_list_2 = []
     for i in list_logs:
@@ -22,7 +22,7 @@ print(list_2)
 
 
 def sort_by_date(data_logs: List[Dict[str, Any]], reverse: bool = True) -> List[Dict[str, Any]]:
-    """Функция sort_by_date сортирует список словарей по ключу 'date'."""
+    """Функция принимает список словарей и возвращает список, отсортированный по дате"""
     return sorted(data_logs, key=lambda x: x["date"], reverse=reverse)
 
 
