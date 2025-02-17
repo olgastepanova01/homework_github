@@ -20,7 +20,7 @@ list_1, list_2 = filter_by_state([{'id': 41428829, 'state': 'EXECUTED', 'date': 
 print(list_1)
 
 
-def sort_by_date(transactions_by_date: List[Dict[str, Any]], reverse: bool = True) -> List[Dict[str, Any]]:
+def sort_by_date(transactions_by_date: list[dict[str, Any]], reverse: bool = True) -> list[dict[str, Any]]:
     """Функция принимает список словарей и возвращает список, отсортированный по дате"""
     return sorted(transactions_by_date, key=lambda x: x["date"], reverse=reverse)
 
